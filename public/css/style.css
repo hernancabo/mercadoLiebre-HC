@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+  background-color: #eac926;
+  padding: 1.5rem 1rem;
+}
+
+nav div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+nav h4 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: none;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #03264c;
+}
+
+.searchbar {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbar input {
+  border: none;
+  padding: 0.5rem;
+}
+.hamburguer {
+  text-align: center;
+}
+
+.hamburguer span {
+  background-color: #1259c3;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.titular {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.precio {
+  font-size: 18px;
+}
+
+.descuento {
+  font-size: 16px;
+  color: #39b54a;
+}
+
+main {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ebebeb;
+}
+
+main section article {
+  margin: 10px 0;
+  background: white;
+}
+
+main section article div {
+  padding: 15px;
+  border-color: #ebebeb;
+  border: 1.5px;
+}
+
+main section article div span {
+  display: block;
+  font-size: 16px;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  color: #39b54a;
+}
+
+main section article div {
+  position: relative;
+}
+
+footer {
+  padding: 2rem;
+}
+
+footer div {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+footer div h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (min-width: 361px) {
+  main section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  main section article {
+    width: 45%;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  .descripcion {
+    opacity: 0;
+    font-size: 16px;
+    padding: 1rem 0;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .ulcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li a {
+    margin-right: 1rem;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  .precio {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .descuento {
+    width: 69%;
+    display: inline-block;
+  }
+
+  main section > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  main section article {
+    width: 20%;
+  }
+
+  footer > div {
+    display: flex;
+  }
+}
+
+form > div {
+  margin: 1.5rem 0;
+}
+
+.container-form {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.label-block,
+legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+  border: none;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+form button {
+  display: block;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.enviar {
+  background-color: #1259c3;
+}
+
+.enviar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.enviar:hover {
+  background-color: #0022aa;
+}
+
+.borrar {
+  padding: 0 !important;
+  color: red;
+  font-weight: bold;
+}
+
+form div:nth-child(7) > div {
+  margin-bottom: 0.5rem;
+}
+
+footer span {
+  color: #1259c3;
+}
+
+footer span:hover {
+  color: #39b54a;
+}
+
+main article span:hover {
+  transform: rotate(-90deg);
+  transition: 0.5s ease-in-out;
+}
+
+main article:hover .descripcion {
+  opacity: 100;
+}
